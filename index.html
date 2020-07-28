@@ -1,0 +1,58 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <section class=" pt-3 text-center">
+            <h1> <span class="text-info " style="font-size: 55px;">O</span>ur Proudcts</h1>
+        </section>
+
+        <form class="container pb-5 pt-4">
+            <label >Proudct Name:</label>
+            <input class="form-control mb-4" name="proudctName" type="text" id="proudctNameInp" >
+            <label >Proudct Price:</label>
+            <input class="form-control mb-4" type="number" name="ProudctPrice" id="proudctPriceInp" >
+            <label >Proudct Category:</label>
+            <input class="form-control mb-4" type="text" name="ProudctCategory" id="proudctcategoryInp" >
+            <label >Proudct Description:</label>
+            <textarea class="form-control mb-4" type="text" name="desc" id="proudctdescInp"></textarea>
+            <div id="addSubmit">
+               <button class="btn btn-info " type="submit" id="btnAddProudct">add Proudct</button>
+            </div>
+        </form>
+        <section class="container">
+            <input class="form-control w-75 mx-auto mb-5" type="text" id="searchProudct" placeholder="Search By Proudct Name">
+
+        </section>
+        <section class="container-xl ">
+            <table class="table  rounded-lg text-center">
+                <thead>
+                    <th>Proudct Name</th>
+                    <th>Proudct Price</th>
+                    <th>Product Category</th>
+                    <th>Proudct Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody class="text-center " id="rowResult">
+                   
+                </tbody>
+
+            </table>
+        </section>
+      
+        
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
